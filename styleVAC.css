@@ -1,0 +1,134 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('imagenes/fondodeheader.jpg');
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+}
+
+/* Estilos de la barra lateral */
+.sidebar {
+    width: 80px;
+    height: 100vh;
+    background-color: rgba(235, 205, 247, 0.8);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.icon-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra los iconos horizontalmente */
+    gap: 15px; /* Espacio entre los iconos */
+    margin-top: 20px;
+}
+
+/* Iconos de la barra lateral */
+.sidebar-icon {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+/* Animación al pasar el cursor */
+.sidebar-icon:hover {
+    transform: scale(1.1);
+}
+
+/* Header styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-image: url('imagenes/fondodeheader.jpeg'); /* Cambia a la nueva imagen */
+    background-size: cover;
+    position: fixed;
+    top: 0;
+    left: 80px; /* Para que empiece después de la barra lateral */
+    width: calc(100% - 80px); /* Ajusta el ancho del header */
+    height: 80px;
+    z-index: 999; /* Debajo de la barra lateral, encima del contenido */
+}
+
+/* Título del encabezado */
+header h2 {
+    flex-grow: 1;
+    text-align: center;
+    margin: 0;
+}
+
+/* Iconos del encabezado */
+.header-icons {
+    display: flex;
+    gap: 10px; /* Espacio entre los iconos */
+}
+
+/* Estilo para los iconos del encabezado */
+.header-icon {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    margin-right: 22px;
+}
+
+/* Animación al pasar el cursor */
+.header-icon:hover {
+    transform: scale(1.1);
+}
+
+/* Registered users section */
+.usuarios-registrados {
+    margin-left: 80px; /* Para ajustar el espacio después de la barra lateral */
+    padding: 20px;
+    padding-bottom: 310px; /* Deja espacio debajo del header */
+    background-image: url('imagenes/fondodeheader.jpeg'); /* Cambia a la nueva imagen */
+    background-size: cover;
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+}
+
+.lista-usuarios {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+}
+
+.lista-usuarios li {
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.titulo {
+    margin-top: 100px;
+}
+
+.img-usuario {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+/* Botón de menú (☰) */
+.menu-btn {
+    background-color: #444;
+    color: white;
+    border: none;
+    font-size: 24px;
+    padding: 10px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
